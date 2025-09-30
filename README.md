@@ -145,13 +145,11 @@ The theme will continue to be updated, even without a single donation! This is j
 
 ## What’s New
 
-Good news: The character limit for CSS in Kagi has been increased to 40,000, so the old workaround with add-ons is no longer necessary and the all-in-one solution can be used directly. Thank you, Kagi team! 
-
 ### 30. September 2025
 
 **v3.0 Theme adaptation for mobile devices**
 
-With this major new update, many issues regarding the use of the theme on mobile devices have been fixed and general adjustments have been made in many places. Another major point is the revised color variable directory, right at the beginning of the .css file. Here you can now granularly customize the theme according to your wishes and preferences. Here in the Readme, you will also find a short description of the variables. Unfortunately, I have once again hit the 40,000-character limit, which is why the code has been highly compressed and is no longer as visually appealing. I apologize for this, but I couldn't think of another solution. Thanks again to @rogue au for sharing the tool [CSSO](https://css.github.io/csso/csso.html) and to its creator. Additionally, the following bugs have been fixed:
+With this major new update, many issues regarding the use of the theme on mobile devices have been fixed and general adjustments have been made in many places. Another major point is the revised color variable directory, right at the beginning of the .css file. Here you can now granularly customize the theme according to your wishes and preferences. Here in the Readme, you will also find a short description of the variables. Unfortunately, I have once again hit the 40,000-character limit, which is why the code has been highly compressed and is no longer as visually appealing. I apologize for this, but I couldn't think of another solution. Thanks again to @realrogue for sharing the tool [CSSO](https://css.github.io/csso/csso.html) and to its creator. Additionally, the following bugs have been fixed:
 
 - Hover state is no longer applied on “Kagi Specials” and “Kagi Changelog”
 pages (html[data-apth=”/lens”])
