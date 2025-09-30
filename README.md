@@ -145,8 +145,6 @@ The theme will continue to be updated, even without a single donation! This is j
 
 ## What’s New
 
-Good news: The character limit for CSS in Kagi has been increased to 40,000, so the old workaround with add-ons is no longer necessary and the all-in-one solution can be used directly. Thank you, Kagi team! 
-
 ### 30. September 2025
 
 **v3.0 Theme adaptation for mobile devices**
