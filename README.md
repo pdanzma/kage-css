@@ -64,20 +64,27 @@ Recommended setting: Set URL placement to “Above Title” under Appearance for
 
 ![URL Positioning](images/url-positioning.png)
 
+Recommended setting for mobile devices: For best results, set the search bar position to "bottom".
+
+![Search Bar Positioning](images/search-bar-positioning.png)
+
 > [!IMPORTANT]
 > The theme only works correctly if you set it to dark mode.
 
-If you encounter problems with glass morphing in Firefox, this is not a problem and does not prevent you from using this theme. Simply comment out the following code.
+If you encounter problems with glass morphing in Firefox, this is not a problem and does not prevent you from using this theme.
 
 ```css
 /* If Firefox has problems with the blur effect, comment out this code. <--- delete this line
+
 @-moz-document url-prefix() {
   .backdrop-blur-elements {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    background: rgba(30, 32, 40, 0.95) !important;
+    background: var(--backdrop-fallback) !important;
   }
-} delete this ---> */ 
+} 
+
+delete this line too ---> */
 ```
 
 ## Customization
@@ -145,41 +152,34 @@ The theme will continue to be updated, even without a single donation! This is j
 
 ## What’s New
 
-### 30. September 2025
+### 08. October 2025
 
-**v3.0 Theme adaptation for mobile devices**
+**v3.1 kagi update hotfix**
 
-With this major new update, many issues regarding the use of the theme on mobile devices have been fixed and general adjustments have been made in many places. Another major point is the revised color variable directory, right at the beginning of the .css file. Here you can now granularly customize the theme according to your wishes and preferences. Here in the Readme, you will also find a short description of the variables. Unfortunately, I have once again hit the 40,000-character limit, which is why the code has been highly compressed and is no longer as visually appealing. I apologize for this, but I couldn't think of another solution. Thanks again to @realrogue for sharing the tool [CSSO](https://css.github.io/csso/csso.html) and to its creator. Additionally, the following bugs have been fixed:
+This hotfix adapts to changes in Kagi Search and Assistant. These include the new Assistant layout and the "Quick Answer" button.
+And the search bar on mobile devices has been improved and made semi-transparent. For best results, set the search bar position to "bottom". Additionally, the following bugs have been fixed:
 
-- Hover state is no longer applied on “Kagi Specials” and “Kagi Changelog”
-pages (html[data-apth=”/lens”])
-- Assistant: Code block color now adapts
-- Assistant: Tables now adapt their color
-- Assistant: Percentage display now matches the theme
-- Assistant: Model view update has been adjusted
-- Complete overhaul of the color variables → better customizability
-- Fixed a Kagi theme bug that affected the “Kagi Specials” and “Kagi
-Changelog” pages.
-- Hover boxes, "Advanced Search", dropdown menus for selection, and the timestamp on videos are now semi-transparent and glass-like
-- Discord user: "The assistant button looks funky for me on mobile, this is for Kagi.com itself without searching anything"
-- Messages (Kite) have been revised
-
-@Zeuhx:
-- “The share icon have a different color for the desktop"
-- "Small color bug in Kagi Assistant"
-- "Theme seems not applied for News sections"
-- "A small theme color bug when I switch to a lens search"
+- paywall popup now adapts to dark mode
+- website ranking adjustments now have a smooth transition
 
 @Temanor:
-- "Yeah, that one. The favicon just kinda gets pushed to the left."
-- "Mine is completely white." -> Ki Icon Bug in Assistant
-- "When opening this menu in the top right corner, the icon dissapears, and there is no X to close it either."
-- "This dropdown menu is slightly misalligned from the button."
-- "I didn't really have any issues with the current method of having the current model have white background [...]"
-- "Hover effect for the header on the changelog page"
 
-Thank you for using the theme!
+- "I think the assistant got some changes. Model selection and file attachment looks strange."
 
+Cakeboss:
+
+- "I found another issue on mobile when using brave on assistant. When making tables it will not let me scroll to the right. But when I turn off css it allows me to scroll to the right"
+
+Daniel Travassos:
+
+- "I prefer to use Microsoft Edge with the zoom set to 125%; I reverted to 100% but some issues persist."
+
+@Zeuhx:
+
+- "Alignment here too"
+- "Text alignment when I click on "More""
+
+And as always, thank you all for your support on Discord!!
 
 ## Roadmap
 
