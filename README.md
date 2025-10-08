@@ -41,7 +41,7 @@ A polished, animated glassmorphism theme for the Kagi search engine. Clean UI, s
 
 ## Overview
 
-kagi-css is a custom stylesheet that gives Kagi a refined glassmorphism look with smooth transitions and a cohesive UI.
+kage-css is a custom stylesheet that gives Kagi a refined glassmorphism look with smooth transitions and a cohesive UI.
 
 ## Features
 
