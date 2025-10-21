@@ -153,7 +153,7 @@ The theme will continue to be updated, even without a single donation! This is j
 
 ## What’s New
 
-### 08. October 2025
+### 21. October 2025
 
 **v3.3 bug fixed and comeback of addons**
 
