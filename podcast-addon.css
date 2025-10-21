@@ -1,0 +1,58 @@
+/*
+Podcast Addon for Kage-CSS
+This is an optional addon stylesheet that can be installed in addition to the main theme.
+Note: Due to a global 40,000-character limit, not all addons can be used simultaneously.
+If styles are missing, disable other addons to stay within the character limit.
+*/
+
+html[data-path="/podcasts"] .top_media_item {
+    background-color: var(--bg-tertiary)
+}
+
+.podcast_result {
+    background-color: var(--bg-tertiary);
+    border-radius: 12px;
+    padding: 1.2rem 22px .7rem 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCLS .3s ease-out forwards
+}
+
+.podcast_result .podcast_title {
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    padding: 8px
+}
+
+.podcast_result .body .thumbnail img {
+    transition: box-shadow .5s ease
+}
+
+.podcast_result .body {
+    margin-top: 0
+}
+
+.podcast_result .body .content .podcast_publisher,
+.podcast_result .episode_meta>div,
+.podcast_result .podcast_duration {
+    background-color: var(--timestamp-bg);
+    color: var(--primary-700);
+    border-radius: 5px;
+    padding: 0 6px;
+    user-select: none
+}
+
+.top_podcast_item {
+    width: 130px;
+    background-color: var(--bg-tertiary);
+    padding: 10px;
+    border-radius: 12px
+}
+
+.podcast_result {
+    padding-right: 22px;
+    padding-left: 18px
+}
+
+/* Compressed version */
+.podcast_result,.top_podcast_item,html[data-path="/podcasts"] .top_media_item{background-color:var(--bg-tertiary)}.podcast_result,.top_podcast_item{border-radius:12px}.podcast_result{padding:1.2rem 22px .7rem 18px;opacity:0;transform:translateY(20px);animation:fadeInCLS .3s ease-out forwards}.podcast_result .podcast_title{background-color:var(--bg-primary);border-radius:5px;padding:8px}.podcast_result .body .thumbnail img{transition:box-shadow .5s ease}.podcast_result .body{margin-top:0}.podcast_result .body .content .podcast_publisher,.podcast_result .episode_meta>div,.podcast_result .podcast_duration{background-color:var(--timestamp-bg);color:var(--primary-700);border-radius:5px;padding:0 6px;user-select:none}.top_podcast_item{width:130px;padding:10px}.podcast_result{padding-right:22px;padding-left:18px}

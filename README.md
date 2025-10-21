@@ -71,11 +71,9 @@ Recommended setting for mobile devices: For best results, set the search bar pos
 > [!IMPORTANT]
 > The theme only works correctly if you set it to dark mode.
 
-If you encounter problems with glass morphing in Firefox, this is not a problem and does not prevent you from using this theme.
+If you encounter problems with glass morphing in Firefox, this is not a problem and does not prevent you from using this theme. Simply add this element to the css.
 
 ```css
-/* If Firefox has problems with the blur effect, comment out this code. <--- delete this line
-
 @-moz-document url-prefix() {
   .backdrop-blur-elements {
     backdrop-filter: none !important;
@@ -83,8 +81,11 @@ If you encounter problems with glass morphing in Firefox, this is not a problem 
     background: var(--backdrop-fallback) !important;
   }
 } 
+```
 
-delete this line too ---> */
+compressed version:
+```css
+@-moz-document url-prefix(){.backdrop-blur-elements{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:var(--backdrop-fallback)!important}}
 ```
 
 ## Customization
@@ -154,30 +155,22 @@ The theme will continue to be updated, even without a single donation! This is j
 
 ### 08. October 2025
 
-**v3.1 kagi update hotfix**
+**v3.3 bug fixed and comeback of addons**
 
-This hotfix adapts to changes in Kagi Search and Assistant. These include the new Assistant layout and the "Quick Answer" button.
-And the search bar on mobile devices has been improved and made semi-transparent. For best results, set the search bar position to "bottom". Additionally, the following bugs have been fixed:
+This update reintroduces the addons. Unfortunately, I can't provide the complete theme as a single CSS file because of the 40,000 character limit for Custom CSS. Therefore, the least used page is now available as an addon (Podcast-addon.css). Currently, it is not possible to use the addon and the custom.css at the same time. To do so, you have to remove individual elements from the custom.css and replace them with the compressed version from the addon. The compressed version can be found at the end of the podcast-addon.css document. Please forgive me for this inconvenience.
 
-- paywall popup now adapts to dark mode
-- website ranking adjustments now have a smooth transition
+The following elements have been adjusted:
+- The clear button for selecting search parameters has been adjusted.
+- The timestamps have been color-adjusted (see Discord poll)
 
+Additionally, the following bugs have been fixed:
 @Temanor:
-
-- "I think the assistant got some changes. Model selection and file attachment looks strange."
-
-Cakeboss:
-
-- "I found another issue on mobile when using brave on assistant. When making tables it will not let me scroll to the right. But when I turn off css it allows me to scroll to the right"
-
-Daniel Travassos:
-
-- "I prefer to use Microsoft Edge with the zoom set to 125%; I reverted to 100% but some issues persist."
+- "The active page button is a bit low contrast when you hover over it."
+- "Info icon in quick answers is barely visible."
 
 @Zeuhx:
-
-- "Alignment here too"
-- "Text alignment when I click on "More""
+- "Some problem with the light when I click on the tab"
+- "On Kagi search, image tab, when I want to upload a image"
 
 And as always, thank you all for your support on Discord!!
 
